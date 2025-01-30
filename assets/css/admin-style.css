@@ -1,0 +1,138 @@
+/* Style for the toggle button */
+.ccs-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.ccs-toggle input {
+    display: none;
+}
+
+.ccs-toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.ccs-toggle-slider:before {
+    position: absolute;
+    content: '';
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.ccs-toggle input:checked + .ccs-toggle-slider {
+    background-color: #4caf50;
+}
+
+.ccs-toggle input:checked + .ccs-toggle-slider:before {
+    transform: translateX(26px);
+}
+
+/* 
+#ccs_product_results {
+    border: 1px solid #ddd;
+    background: #fff;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-result-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.product-result-item:last-child {
+    border-bottom: none;
+}
+
+.product-result-item:hover {
+    background-color: #f7f7f7;
+}
+
+#ccs_product_search {
+    position: relative;
+}
+
+#ccs_product_search:focus {
+    outline: 2px solid #3a9ad9;
+}
+
+#ccs_product_search + .description {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+} */
+
+
+
+.ccs_product_results {
+    border: 1px solid #ddd;
+    background: #fff;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ccs-product-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.ccs-product-item:last-child {
+    border-bottom: none;
+}
+
+.ccs-product-item:hover {
+    background-color: #f7f7f7;
+}
+
+#ccs_product_search {
+    position: relative;
+}
+
+#ccs_product_search:focus {
+    outline: 2px solid #3a9ad9;
+}
+
+#ccs_product_search + .description {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+
+.ccs-product-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.ccs-product-item {
+    transition: background-color 0.3s, box-shadow 0.3s;
+    
+}
+
+
